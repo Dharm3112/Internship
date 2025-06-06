@@ -1,0 +1,147 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #1a1a1a;
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 20px;
+}
+
+.profile-card {
+    background-color: #2d2d2d;
+    border-radius: 12px;
+    padding: 40px 32px;
+    text-align: center;
+    width: 100%;
+    max-width: 384px;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.3);
+}
+
+.profile-image {
+    width: 88px;
+    height: 88px;
+    border-radius: 50%;
+    margin: 0 auto 24px;
+    margin-bottom: 15px;
+    overflow: hidden;
+    background-color: #404040;
+}
+
+.profile-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.profile-name {
+    color: #ffffff;
+    font-size: 24px;
+    font-weight: 600;
+    margin-bottom: 8px;
+    letter-spacing: -0.02em;
+}
+
+.profile-location {
+    color: #a6e22e;
+    font-size: 14px;
+    font-weight: 500;
+    margin-bottom: 16px;
+}
+
+.profile-bio {
+    color: #b8b8b8;
+    font-size: 14px;
+    line-height: 1.4;
+    margin-bottom: 32px;
+}
+
+.social-links {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.social-link {
+    background-color: #404040;
+    color: #ffffff;
+    text-decoration: none;
+    padding: 12px 20px;
+    border-radius: 8px;
+    font-size: 14px;
+    font-weight: 600;
+    transition: all 0.2s ease;
+    display: block;
+}
+
+.social-link:hover {
+    background-color: #505050;
+    transform: translateY(-1px);
+}
+
+.social-link.github {
+    background-color: #a6e22e;
+    color: #1a1a1a;
+}
+
+.social-link.github:hover {
+    background-color: #95d11c;
+}
+
+/* Mobile Responsive */
+@media (max-width: 480px) {
+    body {
+        padding: 16px;
+    }
+
+    .profile-card {
+        padding: 32px 24px;
+        max-width: 327px;
+        border-radius: 10px;
+    }
+
+    .profile-image {
+        width: 80px;
+        height: 80px;
+        margin-bottom: 20px;
+    }
+
+    .profile-name {
+        font-size: 22px;
+        margin-bottom: 6px;
+    }
+
+    .profile-location {
+        font-size: 13px;
+        margin-bottom: 14px;
+    }
+
+    .profile-bio {
+        font-size: 13px;
+        margin-bottom: 28px;
+    }
+
+    .social-links {
+        gap: 14px;
+    }
+
+    .social-link {
+        padding: 14px 20px;
+        font-size: 14px;
+        border-radius: 6px;
+    }
+}
+
+/* Very small screens */
+@media (max-width: 360px) {
+    .profile-card {
+        padding: 28px 20px;
+        max-width: 100%;
+    }
+}
