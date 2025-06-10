@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Frontend Mentor FAQs</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="flowing-lines">
+        <div class="line" style="--rotation: -15deg;"></div>
+        <div class="line" style="--rotation: 25deg;"></div>
+        <div class="line" style="--rotation: -30deg;"></div>
+        <div class="line" style="--rotation: 45deg;"></div>
+    </div>
+
+    <div class="container">
+        <div class="faq-card">
+            <div class="faq-header">
+                <div class="star-icon"></div>
+                <h1 class="faq-title">FAQs</h1>
+            </div>
+
+            <div class="faq-item">
+                <div class="faq-question" onclick="toggleFAQ(0)">
+                    <span class="question-text">What is Frontend Mentor, and how will it help me?</span>
+                    <div class="toggle-icon" id="icon-0">+</div>
+                </div>
+                <div class="faq-answer" id="answer-0">
+                    <p class="answer-text">Frontend Mentor offers realistic coding challenges to help developers improve their frontend coding skills with projects in HTML, CSS, and JavaScript. It's suitable for all levels and ideal for portfolio building.</p>
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <div class="faq-question" onclick="toggleFAQ(1)">
+                    <span class="question-text">Is Frontend Mentor free?</span>
+                    <div class="toggle-icon" id="icon-1">+</div>
+                </div>
+                <div class="faq-answer" id="answer-1">
+                    <p class="answer-text">Yes, Frontend Mentor offers free challenges and resources. There are also premium features available for advanced learning and additional benefits.</p>
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <div class="faq-question" onclick="toggleFAQ(2)">
+                    <span class="question-text">Can I use Frontend Mentor projects in my portfolio?</span>
+                    <div class="toggle-icon" id="icon-2">+</div>
+                </div>
+                <div class="faq-answer" id="answer-2">
+                    <p class="answer-text">Absolutely! All Frontend Mentor projects are designed to be portfolio-worthy. You can showcase your solutions and demonstrate your coding skills to potential employers.</p>
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <div class="faq-question" onclick="toggleFAQ(3)">
+                    <span class="question-text">How can I get help if I'm stuck on a challenge?</span>
+                    <div class="toggle-icon" id="icon-3">+</div>
+                </div>
+                <div class="faq-answer" id="answer-3">
+                    <p class="answer-text">Frontend Mentor has an active community where you can ask questions, get feedback, and collaborate with other developers. You can also access solutions and resources for guidance.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
